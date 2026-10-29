@@ -7,12 +7,18 @@ sources:
     source_site: "paragraf.rs"
     gazette: "Službeni glasnik RS 24/2005, 61/2005, 54/2009, 32/2013, 75/2014, 13/2017 - odluka US, 113/2017, 95/2018 - autentično tumačenje"
     script: latin
-    retrieved: "2026-10-29T18:50:00+01:00"
+    retrieved: "2026-10-29"
     sha256: "f8724ee0d52f1866c468ed32e2879a10778ca9c7ae53184c726466b13e788c17"
     size_bytes: 231594
     status: needs_review
-    notes: "unofficial source – replace with official PIS text before production; currency not confirmed: the page omits the 109/2025 amendment reported by PIS."
-    attempts: ["paragraf.rs: HTTP 200; title and Član 1 verified"]
+    notes: "unofficial source – replace with official PIS text before production; Currency not confirmed: missing amendment 109/2025. Download official consolidated text manually from PIS."
+    attempts:
+      - url: "https://www.paragraf.rs/propisi/zakon_o_radu.html"
+        result: "ok"
+        detail: "HTTP 200; title and Član 1 verified"
+      - url: "https://pravno-informacioni-sistem.rs/eli/rep/sgrs/skupstina/zakon/2005/61/34"
+        result: "js_only"
+        detail: "HTTP 200; returned an empty JavaScript application shell without the law title or Član 1"
     candidate_urls: ["https://pravno-informacioni-sistem.rs/eli/rep/sgrs/skupstina/zakon/2005/61/34"]
   - id: zakon_o_bezbednosti_i_zdravlju_na_radu
     title: "Zakon o bezbednosti i zdravlju na radu"
@@ -22,12 +28,18 @@ sources:
     source_site: "paragraf.rs"
     gazette: "Službeni glasnik RS 35/2023"
     script: latin
-    retrieved: "2026-10-29T18:50:00+01:00"
+    retrieved: "2026-10-29"
     sha256: "1061061baa36753a90ae5b048781414080ca423da986af57fa497e4db8e10188"
     size_bytes: 184455
     status: needs_review
     notes: "unofficial source – replace with official PIS text before production"
-    attempts: ["paragraf.rs: HTTP 200; title and Član 1 verified"]
+    attempts:
+      - url: "https://www.paragraf.rs/propisi/zakon_o_bezbednosti_i_zdravlju_na_radu.html"
+        result: "ok"
+        detail: "HTTP 200; title and Član 1 verified"
+      - url: "https://pravno-informacioni-sistem.rs/eli/rep/sgrs/skupstina/zakon/2023/35/2"
+        result: "js_only"
+        detail: "HTTP 200; returned an empty JavaScript application shell without the law title or Član 1"
     candidate_urls: ["https://pravno-informacioni-sistem.rs/eli/rep/sgrs/skupstina/zakon/2023/35/2"]
   - id: zakon_o_sprecavanju_zlostavljanja_na_radu
     title: "Zakon o sprečavanju zlostavljanja na radu"
@@ -37,12 +49,15 @@ sources:
     source_site: "paragraf.rs"
     gazette: "Službeni glasnik RS 36/2010"
     script: latin
-    retrieved: "2026-10-29T18:50:00+01:00"
+    retrieved: "2026-10-29"
     sha256: "0df3350260855763a047e867415c49373412a975bcf0d4fe23d8026a1da8a748"
     size_bytes: 52015
     status: needs_review
     notes: "unofficial source – replace with official PIS text before production"
-    attempts: ["paragraf.rs: HTTP 200; title and Član 1 verified"]
+    attempts:
+      - url: "https://www.paragraf.rs/propisi/zakon_o_sprecavanju_zlostavljanja_na_radu.html"
+        result: "ok"
+        detail: "HTTP 200; title and Član 1 verified"
     candidate_urls: ["https://www.paragraf.rs/propisi/zakon_o_sprecavanju_zlostavljanja_na_radu.html"]
   - id: zakon_o_agencijskom_zaposljavanju
     title: "Zakon o agencijskom zapošljavanju"
@@ -52,12 +67,15 @@ sources:
     source_site: "paragraf.rs"
     gazette: "Službeni glasnik RS 86/2019"
     script: latin
-    retrieved: "2026-10-29T18:50:00+01:00"
+    retrieved: "2026-10-29"
     sha256: "923fefa5650b61f4e9c0775f1e63710a29a04de4469941954b13d8ca4d25071a"
     size_bytes: 70090
     status: needs_review
     notes: "unofficial source – replace with official PIS text before production"
-    attempts: ["paragraf.rs: HTTP 200; title and Član 1 verified"]
+    attempts:
+      - url: "https://www.paragraf.rs/propisi/zakon-o-agencijskom-zaposljavanju.html"
+        result: "ok"
+        detail: "HTTP 200; title and Član 1 verified"
     candidate_urls: ["https://www.paragraf.rs/propisi/zakon-o-agencijskom-zaposljavanju.html"]
   - id: zakon_o_sezonskim_poslovima
     title: "Zakon o pojednostavljenom radnom angažovanju na sezonskim poslovima u određenim delatnostima"
@@ -67,12 +85,15 @@ sources:
     source_site: "paragraf.rs"
     gazette: "Službeni glasnik RS 50/2018"
     script: latin
-    retrieved: "2026-10-29T18:50:00+01:00"
+    retrieved: "2026-10-29"
     sha256: "2ca079a3c9206b4fef1b11a1177741903620199ad7c00b7e63fb9114c6407fe4"
     size_bytes: 46427
     status: needs_review
     notes: "unofficial source – replace with official PIS text before production"
-    attempts: ["paragraf.rs: first URL returned HTTP 404; alternate published URL HTTP 200; title and Član 1 verified"]
+    attempts:
+      - url: "https://www.paragraf.rs/propisi/zakon-pojednostavljenom-radnom-angazovanju-sezonskim-poslovima.html"
+        result: "ok"
+        detail: "HTTP 200; title and Član 1 verified"
     candidate_urls: ["https://www.paragraf.rs/propisi/zakon-pojednostavljenom-radnom-angazovanju-sezonskim-poslovima.html"]
   - id: zakon_o_zaposljavanju_i_osiguranju_za_slucaj_nezaposlenosti
     title: "Zakon o zapošljavanju i osiguranju za slučaj nezaposlenosti"
@@ -82,12 +103,15 @@ sources:
     source_site: "paragraf.rs"
     gazette: "Službeni glasnik RS 36/2009, 88/2010, 38/2015, 113/2017, 113/2017 - dr. zakon, 49/2021"
     script: latin
-    retrieved: "2026-10-29T18:50:00+01:00"
+    retrieved: "2026-10-29"
     sha256: "0504382699a2b9b11e7440fb83fe3fea1dd6d4f3d2e11ab590a52a674c0c1212"
     size_bytes: 105008
     status: needs_review
     notes: "unofficial source – replace with official PIS text before production"
-    attempts: ["paragraf.rs: HTTP 200; title and Član 1 verified"]
+    attempts:
+      - url: "https://www.paragraf.rs/propisi/zakon_o_zaposljavanju_i_osiguranju_za_slucaj_nezaposlenosti.html"
+        result: "ok"
+        detail: "HTTP 200; title and Član 1 verified"
     candidate_urls: ["https://www.paragraf.rs/propisi/zakon_o_zaposljavanju_i_osiguranju_za_slucaj_nezaposlenosti.html"]
   - id: zakon_o_zaposljavanju_stranaca
     title: "Zakon o zapošljavanju stranaca"
@@ -97,12 +121,15 @@ sources:
     source_site: "paragraf.rs"
     gazette: "Službeni glasnik RS 128/2014, 113/2017, 50/2018, 31/2019, 62/2023"
     script: latin
-    retrieved: "2026-10-29T18:50:00+01:00"
+    retrieved: "2026-10-29"
     sha256: "d00f0e3aaccef93f481302b282f8fdbf835a63b9d1a5a3ca18038c1e29de12a0"
     size_bytes: 68719
     status: needs_review
     notes: "unofficial source – replace with official PIS text before production"
-    attempts: ["paragraf.rs: HTTP 200; title and Član 1 verified"]
+    attempts:
+      - url: "https://www.paragraf.rs/propisi/zakon_o_zaposljavanju_stranaca.html"
+        result: "ok"
+        detail: "HTTP 200; title and Član 1 verified"
     candidate_urls: ["https://www.paragraf.rs/propisi/zakon_o_zaposljavanju_stranaca.html"]
   - id: zakon_o_mirnom_resavanju_radnih_sporova
     title: "Zakon o mirnom rešavanju radnih sporova"
@@ -112,12 +139,15 @@ sources:
     source_site: "paragraf.rs"
     gazette: "Službeni glasnik RS 125/2004, 104/2009, 50/2018"
     script: latin
-    retrieved: "2026-10-29T18:50:00+01:00"
+    retrieved: "2026-10-29"
     sha256: "b9d4b178855cb309ba04b2fd3cbf88c6f374bc7ec05bc801ad0325aedc2fce7f"
     size_bytes: 59358
     status: needs_review
     notes: "unofficial source – replace with official PIS text before production"
-    attempts: ["paragraf.rs: HTTP 200; title and Član 1 verified"]
+    attempts:
+      - url: "https://www.paragraf.rs/propisi/zakon_o_mirnom_resavanju_radnih_sporova.html"
+        result: "ok"
+        detail: "HTTP 200; title and Član 1 verified"
     candidate_urls: ["https://www.paragraf.rs/propisi/zakon_o_mirnom_resavanju_radnih_sporova.html"]
   - id: zakon_o_strajku
     title: "Zakon o štrajku"
@@ -127,12 +157,15 @@ sources:
     source_site: "paragraf.rs"
     gazette: "Službeni list SRJ 29/1996; Službeni glasnik RS 101/2005 - dr. zakon, 103/2012 - odluka US"
     script: latin
-    retrieved: "2026-10-29T18:50:00+01:00"
+    retrieved: "2026-10-29"
     sha256: "58e05be4d4266936aa540af9c1dca3fceee194559b9f9508736d072e97b8535d"
     size_bytes: 39519
     status: needs_review
     notes: "unofficial source – replace with official PIS text before production"
-    attempts: ["paragraf.rs: HTTP 200; title and Član 1 verified"]
+    attempts:
+      - url: "https://www.paragraf.rs/propisi/zakon_o_strajku.html"
+        result: "ok"
+        detail: "HTTP 200; title and Član 1 verified"
     candidate_urls: ["https://www.paragraf.rs/propisi/zakon_o_strajku.html"]
   - id: zakon_o_finansijskoj_podrsci_porodici_sa_decom
     title: "Zakon o finansijskoj podršci porodici sa decom"
@@ -142,12 +175,15 @@ sources:
     source_site: "paragraf.rs"
     gazette: "Službeni glasnik RS 113/2017, 50/2018, 46/2021 - odluka US, 51/2021 - odluka US, 53/2021 - odluka US, 66/2021, 130/2021, 43/2023 - odluka US, 62/2023, 11/2024 - odluka US, 79/2024"
     script: latin
-    retrieved: "2026-10-29T18:50:00+01:00"
+    retrieved: "2026-10-29"
     sha256: "8db3282d3effe1d59bad970a2b442311f33b1c4c4f6e65821e111cc92d02c157"
     size_bytes: 117680
     status: needs_review
     notes: "unofficial source – replace with official PIS text before production"
-    attempts: ["paragraf.rs: HTTP 200; title and Član 1 verified"]
+    attempts:
+      - url: "https://www.paragraf.rs/propisi/zakon_o_finansijskoj_podrsci_porodici_sa_decom.html"
+        result: "ok"
+        detail: "HTTP 200; title and Član 1 verified"
     candidate_urls: ["https://www.paragraf.rs/propisi/zakon_o_finansijskoj_podrsci_porodici_sa_decom.html"]
   - id: zakon_o_zabrani_diskriminacije
     title: "Zakon o zabrani diskriminacije"
@@ -157,12 +193,15 @@ sources:
     source_site: "paragraf.rs"
     gazette: "Službeni glasnik RS 22/2009, 52/2021"
     script: latin
-    retrieved: "2026-10-29T18:50:00+01:00"
+    retrieved: "2026-10-29"
     sha256: "340f7c2a707ec927528e14e4f3f2f74a40b54d061d3202eb1a70b4b1606004a0"
     size_bytes: 81169
     status: needs_review
     notes: "unofficial source – replace with official PIS text before production"
-    attempts: ["paragraf.rs: HTTP 200; title and Član 1 verified"]
+    attempts:
+      - url: "https://www.paragraf.rs/propisi/zakon_o_zabrani_diskriminacije.html"
+        result: "ok"
+        detail: "HTTP 200; title and Član 1 verified"
     candidate_urls: ["https://www.paragraf.rs/propisi/zakon_o_zabrani_diskriminacije.html"]
   - id: ministarstvo_za_rad_najcesca_pitanja
     title: "Najčešća pitanja — Ministarstvo za rad, zapošljavanje, boračka i socijalna pitanja"
@@ -172,8 +211,13 @@ sources:
     source_site: "minrzs.gov.rs"
     gazette: null
     script: cyrillic
-    retrieved: "2026-10-29T18:45:00+01:00"
+    retrieved: "2026-10-29"
     sha256: "3dacc8fc6d3e24dfba028e8d154c25499a871780dab8656473d0e326fa09fe67"
     size_bytes: 171372
     status: ok
+    attempts:
+      - url: "https://www.minrzs.gov.rs/sr/najcesca-pitanja"
+        result: "ok"
+        detail: "HTTP 200; title verified"
+    candidate_urls: []
     notes: "Official Ministry FAQ page fetched as HTML."
